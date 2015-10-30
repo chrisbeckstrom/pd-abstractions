@@ -1,0 +1,9 @@
+#N canvas 1224 501 450 300 10;
+#X obj 221 237 dac~;
+#X obj 228 156 noise~;
+#X text 238 132 jnoise generator;
+#X obj 117 92 loadbang;
+#X msg 111 163 \; pd dsp 1;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 3 0 4 0;

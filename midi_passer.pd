@@ -1,0 +1,7 @@
+#N canvas 907 462 450 300 10;
+#X text 30 34 this receives MIDI clock from studio.local;
+#X obj 34 62 netreceive 13000;
+#X obj 31 116 print;
+#X floatatom 118 116 5 0 0 0 - - -;
+#X connect 1 0 2 0;
+#X connect 1 1 3 0;

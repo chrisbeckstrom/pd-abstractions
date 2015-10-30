@@ -1,0 +1,17 @@
+#N canvas 162 163 176 386 10;
+#X msg 17 336 \; pd dsp 1;
+#X msg 84 336 \; pd dsp 0;
+#X obj 61 291 dac~;
+#X obj 22 74 samphold~;
+#X obj 73 53 phasor~ 8000;
+#X obj 22 24 adc~;
+#X obj 22 206 spigot~;
+#X obj 61 185 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 79 184 crusher;
+#X connect 3 0 6 0;
+#X connect 4 0 3 1;
+#X connect 5 0 3 0;
+#X connect 6 1 2 0;
+#X connect 6 1 2 1;
+#X connect 7 0 6 1;

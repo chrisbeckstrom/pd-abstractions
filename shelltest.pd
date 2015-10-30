@@ -1,0 +1,28 @@
+#N canvas 1287 449 571 569 10;
+#X obj 48 304 shell;
+#X obj 32 372 print STDOUT;
+#X obj 140 371 print DONE;
+#X obj 77 40 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 94 63 /home/chris/scripts/bitwig/space.sh;
+#X msg 20 -7 /home/chris/scripts/bitwig/build_space.sh;
+#X text 14 -27 get bitwig's window ID \, write script to control space
+key;
+#X text 97 40 hit bitwig's space key;
+#X msg 112 114 /home/chris/scripts/bitwig/record.sh;
+#X obj 103 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 119 93 toggle record enable;
+#X msg 171 165 /home/chris/scripts/bitwig/click.sh;
+#X obj 163 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 186 143 toggle metronome/click;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 8 0 0 0;
+#X connect 9 0 8 0;
+#X connect 11 0 0 0;
+#X connect 12 0 11 0;
